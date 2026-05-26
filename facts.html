@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Facts - Climate Buds</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🌱 Climate Buds</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="facts.html">Fun Facts</a></li>
+                <li><a href="tips.html">Daily Tips</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>🌍 Climate Facts & Figures</h1>
+            <p>Discover fascinating facts about our planet and climate change!</p>
+        </div>
+    </section>
+
+    <!-- Facts Container -->
+    <section class="facts-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterFacts('all')">All Facts</button>
+                <button class="filter-btn" onclick="filterFacts('emissions')">Emissions 💨</button>
+                <button class="filter-btn" onclick="filterFacts('solutions')">Solutions ✅</button>
+                <button class="filter-btn" onclick="filterFacts('ocean')">Ocean 🌊</button>
+            </div>
+
+            <div class="facts-grid">
+                <!-- Emissions Facts -->
+                <div class="fact-card emissions">
+                    <div class="fact-category">Emissions</div>
+                    <p>Transportation accounts for about 27% of greenhouse gas emissions!</p>
+                </div>
+
+                <div class="fact-card emissions">
+                    <div class="fact-category">Emissions</div>
+                    <p>Agriculture produces about 10% of global greenhouse gases.</p>
+                </div>
+
+                <div class="fact-card emissions">
+                    <div class="fact-category">Emissions</div>
+                    <p>Industry produces about 25% of global emissions.</p>
+                </div>
+
+                <div class="fact-card emissions">
+                    <div class="fact-category">Emissions</div>
+                    <p>Food waste produces about 8% of global greenhouse gases.</p>
+                </div>
+
+                <!-- Solutions Facts -->
+                <div class="fact-card solutions">
+                    <div class="fact-category">Solutions</div>
+                    <p>One mature tree can absorb up to 48 lbs of CO2 per year!</p>
+                </div>
+
+                <div class="fact-card solutions">
+                    <div class="fact-category">Solutions</div>
+                    <p>LED bulbs use 75% less energy than traditional incandescent bulbs!</p>
+                </div>
+
+                <div class="fact-card solutions">
+                    <div class="fact-category">Solutions</div>
+                    <p>Recycling one aluminum can saves enough energy to power a laptop for 3 hours!</p>
+                </div>
+
+                <div class="fact-card solutions">
+                    <div class="fact-category">Solutions</div>
+                    <p>Renewable energy now accounts for over 29% of global electricity generation.</p>
+                </div>
+
+                <div class="fact-card solutions">
+                    <div class="fact-category">Solutions</div>
+                    <p>Solar energy has become 90% cheaper in the last decade!</p>
+                </div>
+
+                <div class="fact-card solutions">
+                    <div class="fact-category">Solutions</div>
+                    <p>One person switching to renewable energy could save 1,500+ lbs of CO2 per year!</p>
+                </div>
+
+                <!-- Ocean Facts -->
+                <div class="fact-card ocean">
+                    <div class="fact-category">Ocean</div>
+                    <p>Our oceans absorb about 90% of the heat from climate change.</p>
+                </div>
+
+                <div class="fact-card ocean">
+                    <div class="fact-category">Ocean</div>
+                    <p>A single plastic bag can take 1,000 years to decompose in the ocean.</p>
+                </div>
+
+                <!-- Climate Change Facts -->
+                <div class="fact-card emissions">
+                    <div class="fact-category">Climate</div>
+                    <p>Earth's average temperature has risen by about 1.1°C since pre-industrial times.</p>
+                </div>
+
+                <div class="fact-card emissions">
+                    <div class="fact-category">Climate</div>
+                    <p>CO2 levels are now higher than any point in the last 800,000 years.</p>
+                </div>
+
+                <div class="fact-card emissions">
+                    <div class="fact-category">Climate</div>
+                    <p>The average person produces 4-8 tons of CO2 annually.</p>
+                </div>
+
+                <div class="fact-card solutions">
+                    <div class="fact-category">Impact</div>
+                    <p>Climate change threatens pollinators like bees, which are crucial for 75% of global food production.</p>
+                </div>
+
+                <div class="fact-card solutions">
+                    <div class="fact-category">Solutions</div>
+                    <p>Eating less meat, especially beef, is one of the most impactful personal changes.</p>
+                </div>
+
+                <div class="fact-card solutions">
+                    <div class="fact-category">Solutions</div>
+                    <p>If everyone biked instead of driving short trips, we could reduce emissions significantly!</p>
+                </div>
+
+                <div class="fact-card solutions">
+                    <div class="fact-category">Solutions</div>
+                    <p>Switching to LED lighting could reduce global energy demand by 15%!</p>
+                </div>
+
+                <div class="fact-card solutions">
+                    <div class="fact-category">Solutions</div>
+                    <p>Planting trees is one of the most effective ways to fight climate change.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Random Fact Generator -->
+    <section class="random-fact-section">
+        <div class="container">
+            <h2>Surprise Me! 🎲</h2>
+            <p>Click the button below to get a random climate fact!</p>
+            <button class="btn btn-primary" onclick="generateRandomFact()">Generate Random Fact</button>
+            <div id="randomFactDisplay" class="random-fact-display" style="display:none;">
+                <p id="randomFactText"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Climate Buds. Building a sustainable future, one action at a time! 🌍💚</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function filterFacts(category) {
+            const cards = document.querySelectorAll('.fact-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            cards.forEach(card => {
+                if (category === 'all') {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = card.classList.contains(category) ? 'block' : 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Tips - Climate Buds</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🌱 Climate Buds</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="facts.html">Fun Facts</a></li>
+                <li><a href="tips.html">Daily Tips</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>🌿 Daily Climate Tips</h1>
+            <p>Simple, everyday actions to make a big difference!</p>
+        </div>
+    </section>
+
+    <!-- Tips Container -->
+    <section class="tips-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterTips('all')">All Tips</button>
+                <button class="filter-btn" onclick="filterTips('energy')">⚡ Energy</button>
+                <button class="filter-btn" onclick="filterTips('transport')">🚗 Transport</button>
+                <button class="filter-btn" onclick="filterTips('food')">🍽️ Food</button>
+                <button class="filter-btn" onclick="filterTips('consumption')">🛍️ Consumption</button>
+                <button class="filter-btn" onclick="filterTips('nature')">🌿 Nature</button>
+            </div>
+
+            <div class="tips-grid">
+                <!-- Energy Tips -->
+                <div class="tip-card energy">
+                    <div class="tip-header">
+                        <h3>⚡ Switch to LED Bulbs</h3>
+                        <span class="impact">💚💚💚</span>
+                    </div>
+                    <p>Replace incandescent bulbs with LED alternatives. They use 75% less energy and last much longer!</p>
+                </div>
+
+                <div class="tip-card energy">
+                    <div class="tip-header">
+                        <h3>⚡ Unplug Devices</h3>
+                        <span class="impact">💚💚</span>
+                    </div>
+                    <p>Unplug chargers and devices when not in use. They drain energy even in standby mode!</p>
+                </div>
+
+                <div class="tip-card energy">
+                    <div class="tip-header">
+                        <h3>⚡ Use a Programmable Thermostat</h3>
+                        <span class="impact">💚💚💚</span>
+                    </div>
+                    <p>Automatically adjust your home temperature. You can save up to 10% on heating and cooling!</p>
+                </div>
+
+                <div class="tip-card energy">
+                    <div class="tip-header">
+                        <h3>⚡ Air Dry Dishes & Clothes</h3>
+                        <span class="impact">💚💚</span>
+                    </div>
+                    <p>Let dishes and laundry dry naturally. Saves significant energy and extends the life of your items!</p>
+                </div>
+
+                <div class="tip-card energy">
+                    <div class="tip-header">
+                        <h3>⚡ Switch to Renewable Energy</h3>
+                        <span class="impact">💚💚💚</span>
+                    </div>
+                    <p>Ask your utility provider about renewable energy plans or install solar panels!</p>
+                </div>
+
+                <!-- Transportation Tips -->
+                <div class="tip-card transport">
+                    <div class="tip-header">
+                        <h3>🚗 Bike or Walk</h3>
+                        <span class="impact">💚💚💚</span>
+                    </div>
+                    <p>For short trips, skip the car! Walking and biking save emissions and improve your health!</p>
+                </div>
+
+                <div class="tip-card transport">
+                    <div class="tip-header">
+                        <h3>🚗 Use Public Transport</h3>
+                        <span class="impact">💚💚💚</span>
+                    </div>
+                    <p>Buses and trains carry many people at once. Much more efficient than individual cars!</p>
+                </div>
+
+                <div class="tip-card transport">
+                    <div class="tip-header">
+                        <h3>🚗 Carpool or Combine Trips</h3>
+                        <span class="impact">💚💚</span>
+                    </div>
+                    <p>Share rides with friends or run all your errands in one trip to reduce driving!</p>
+                </div>
+
+                <div class="tip-card transport">
+                    <div class="tip-header">
+                        <h3>🚗 Consider an Electric Vehicle</h3>
+                        <span class="impact">💚💚💚</span>
+                    </div>
+                    <p>When you're ready for a new car, electric vehicles produce zero direct emissions!</p>
+                </div>
+
+                <!-- Food Tips -->
+                <div class="tip-card food">
+                    <div class="tip-header">
+                        <h3>🍽️ Reduce Meat Consumption</h3>
+                        <span class="impact">💚💚💚</span>
+                    </div>
+                    <p>Try Meatless Mondays! Eating less meat, especially beef, significantly reduces your carbon footprint.</p>
+                </div>
+
+                <div class="tip-card food">
+                    <div class="tip-header">
+                        <h3>🍽️ Buy Local & Seasonal</h3>
+                        <span class="impact">💚💚</span>
+                    </div>
+                    <p>Support local farmers and reduce transportation emissions. Food travels less to reach you!</p>
+                </div>
+
+                <div class="tip-card food">
+                    <div class="tip-header">
+                        <h3>🍽️ Start Composting</h3>
+                        <span class="impact">💚💚💚</span>
+                    </div>
+                    <p>Turn food scraps into garden gold! Composting diverts waste and creates nutrient-rich soil.</p>
+                </div>
+
+                <div class="tip-card food">
+                    <div class="tip-header">
+                        <h3>🍽️ Reduce Food Waste</h3>
+                        <span class="impact">💚💚💚</span>
+                    </div>
+                    <p>Plan meals, store food properly, and use leftovers creatively. Food waste = wasted resources!</p>
+                </div>
+
+                <div class="tip-card food">
+                    <div class="tip-header">
+                        <h3>🍽️ Choose Plant-Based Options</h3>
+                        <span class="impact">💚💚💚</span>
+                    </div>
+                    <p>Try plant-based milk, meat alternatives, and plant-focused recipes! They're better for the planet.</p>
+                </div>
+
+                <!-- Consumption Tips -->
+                <div class="tip-card consumption">
+                    <div class="tip-header">
+                        <h3>🛍️ Buy Less, Choose Well</h3>
+                        <span class="impact">💚💚💚</span>
+                    </div>
+                    <p>Quality over quantity! Buying durable items reduces waste and consumption.</p>
+                </div>
+
+                <div class="tip-card consumption">
+                    <div class="tip-header">
+                        <h3>🛍️ Shop Secondhand</h3>
+                        <span class="impact">💚💚💚</span>
+                    </div>
+                    <p>Thrift stores, online marketplaces, and swap groups have amazing finds and reduce demand for new production!</p>
+                </div>
+
+                <div class="tip-card consumption">
+                    <div class="tip-header">
+                        <h3>🛍️ Recycle & Reuse</h3>
+                        <span class="impact">💚💚</span>
+                    </div>
+                    <p>Always check what your community recycles. Get creative with reusing containers and items!</p>
+                </div>
+
+                <div class="tip-card consumption">
+                    <div class="tip-header">
+                        <h3>🛍️ Choose Sustainable Products</h3>
+                        <span class="impact">💚💚</span>
+                    </div>
+                    <p>Look for eco-friendly packaging, organic materials, and products from sustainable companies!</p>
+                </div>
+
+                <div class="tip-card consumption">
+                    <div class="tip-header">
+                        <h3>🛍️ Reduce Plastic Use</h3>
+                        <span class="impact">💚💚💚</span>
+                    </div>
+                    <p>Bring reusable bags, bottles, and containers. Refuse single-use plastics whenever possible!</p>
+                </div>
+
+                <!-- Nature Tips -->
+                <div class="tip-card nature">
+                    <div class="tip-header">
+                        <h3>🌿 Plant a Tree</h3>
+                        <span class="impact">💚💚💚</span>
+                    </div>
+                    <p>Trees absorb CO2 and provide shade. Even one tree makes a difference!</p>
+                </div>
+
+                <div class="tip-card nature">
+                    <div class="tip-header">
+                        <h3>🌿 Create a Garden</h3>
+                        <span class="impact">💚💚💚</span>
+                    </div>
+                    <p>Grow your own food, even in small spaces! Gardening reduces transportation and chemical use.</p>
+                </div>
+
+                <div class="tip-card nature">
+                    <div class="tip-header">
+                        <h3>🌿 Help Local Wildlife</h3>
+                        <span class="impact">💚💚</span>
+                    </div>
+                    <p>Plant native plants, create water sources, and avoid pesticides to support pollinators and birds!</p>
+                </div>
+
+                <div class="tip-card nature">
+                    <div class="tip-header">
+                        <h3>🌿 Volunteer Locally</h3>
+                        <span class="impact">💚💚</span>
+                    </div>
+                    <p>Join community clean-ups, tree planting events, and conservation projects!</p>
+                </div>
+
+                <div class="tip-card nature">
+                    <div class="tip-header">
+                        <h3>🌿 Save Water</h3>
+                        <span class="impact">💚💚</span>
+                    </div>
+                    <p>Take shorter showers, fix leaks, and water plants wisely. Water is precious!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 30-Day Challenge -->
+    <section class="challenge-section">
+        <div class="container">
+            <h2>🌟 30-Day Climate Challenge!</h2>
+            <p>Pick one tip each day for a month and track your progress!</p>
+            <div class="challenge-box">
+                <h3>How It Works:</h3>
+                <ul>
+                    <li>✅ Choose one tip to try each day</li>
+                    <li>✅ See how it feels and impacts your routine</li>
+                    <li>✅ By day 30, you'll have built amazing new habits!</li>
+                    <li>✅ Share your journey with friends to inspire them</li>
+                </ul>
+                <p class="challenge-text">Every action counts. Your small changes inspire others! 🌍💚</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Climate Buds. Building a sustainable future, one action at a time! 🌍💚</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function filterTips(category) {
+            const cards = document.querySelectorAll('.tip-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            cards.forEach(card => {
+                if (category === 'all') {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = card.classList.contains(category) ? 'block' : 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
